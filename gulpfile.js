@@ -22,7 +22,7 @@ gulp.task('copy-js', () => {
 });
 
 gulp.task('copy-assets', () => {
-    return gulp.src('./src/img/*.?(jpeg|jpg|png|gif|mp4|webm)')
+    return gulp.src('./src/img/*.?(jpeg|jpg|png|gif|svg|mp4|webm)')
         .pipe(gulp.dest('./dist/img'));
 })
 
