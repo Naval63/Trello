@@ -3,6 +3,11 @@
 // largest => 1200px/16 = 75em
 $bp-largest: 75em;
 
+// large => 1100px/16 = 68,75em
+$bp-large: 68.75em;
+
+// medium => 900px/16 = 56.25em
+$bp-medium: 56.25em;
 
 // COLORS
 
@@ -46,6 +51,10 @@ $bp-largest: 75em;
 html {
     box-sizing: border-box;
     font-size: 62.5%;  
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
